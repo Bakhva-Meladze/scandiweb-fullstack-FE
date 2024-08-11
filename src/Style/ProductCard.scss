@@ -1,0 +1,141 @@
+.category-page {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .product-card {
+        background-color: $white;
+        width: 350px;
+        text-align: left;
+        height: auto;
+        margin: 10px 20px 20px;
+        padding-bottom: 5em;
+
+        .out-stock {
+            opacity: 0.5;
+            min-width: 356px;
+            max-height: 338px;
+            background: $white;
+            text-align: left;
+        }
+
+        .value-stock {
+            font-family: $font-family-raleway;
+            font-weight: 400;
+            font-size: $font-size-large;
+            line-height: 38px;
+            text-align: right;
+            color: $grey-3;
+            margin-top: 127px;
+            position: absolute;
+            margin-left: 70px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        &.product-card:hover {
+            box-shadow: 0 4px 35px $shadow;
+
+            .container-data {
+                display: flex;
+                width: auto;
+                height: 50px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                margin-left: 10px;
+                margin-right: 5px;
+
+                .basket-img {
+                    color: $white;
+                    width: 52px;
+                    background: $green;
+                    border-radius: 50px;
+                    display: block;
+                    margin-right: 20px;
+
+                    .img-value {
+                        width: 24px;
+                        text-align: center;
+                        padding: 14px;
+                    }
+                }
+            }
+        }
+
+        .container-data {
+            display: flex;
+            width: auto;
+            height: 50px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin-left: 10px;
+            margin-right: 5px;
+
+            .basket-img {
+                color: $white;
+                width: 52px;
+                background: $green;
+                border-radius: 50px;
+                display: none;
+                cursor: pointer;
+
+                .basket-img:hover {
+                    background: $black;
+                }
+
+                .img-value {
+                    width: 24px;
+                    text-align: center;
+                    padding: 14px;
+                }
+            }
+
+            .name {
+                margin-top: 21px;
+                font-family: $font-family-raleway;
+                font-weight: 300;
+                Width: 354px;
+                line-height: 28px;
+                font-size: $font-size-medium;
+                color: $grey-3;
+            }
+
+            .currency {
+                font-family: $font-family-raleway;
+                font-size: $font-size-medium;
+                font-weight: 500;
+                line-height: 28px;
+                margin-bottom: 16px;
+                text-align: left;
+            }
+        }
+
+        .pictures {
+            width: 350px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+            height: 400px;
+            object-position: center center;
+        }
+
+        .brand {
+            font-weight: 500;
+            width: 200px;
+            Line-height: 30.8px;
+            font-size: $font-size-xl;
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,153 @@
+.main-product {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 100px;
+
+    .container-pic {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .select-pic {
+            padding-top: 30px;
+            display: flex;
+            width: 100px;
+            height: 80px;
+            margin-left: 5px;
+        }
+    }
+
+    .main-picture {
+        height: 100%;
+        width: 600px;
+        padding-right: 10px;
+        max-width: 600px;
+        margin-left: 50px;
+    }
+
+    .product-details {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 1 0%;
+        max-width: 400px;
+
+        .main-picture {
+            height: 100%;
+            width: 500px;
+            padding-right: 10px;
+            max-width: 600px;
+        }
+
+        .brand {
+            width: 292px;
+            height: 27px;
+            font-family: $font-family-raleway;
+            font-size: $font-size-xl;
+            font-weight: 600;
+            line-height: 27px;
+            color: $black
+        }
+
+        .name {
+            font-family: $font-family-raleway;
+            font-size: $font-size-xl;
+            font-weight: 400;
+            line-height: 27px;
+            margin-top: 16px;
+            margin-bottom: 43px;
+        }
+
+        .size {
+            font-family: $font-family-roboto;
+            font-size: $font-size-medium;
+            font-weight: 700;
+            line-height: 18px;
+            color: $black;
+        }
+
+        .items {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            .item {
+                border: 1px solid $black;
+                text-align: center;
+                width: 63px;
+                height: 45px;
+                cursor: pointer;
+                margin-right: 5px;
+
+            }
+
+            .item:hover {
+                background: $black;
+                color: $grey-2;
+            }
+
+            .color {
+                background-color: $black;
+                color: $grey-2;
+                border: 3px solid $grey;
+            }
+
+            .select-color {
+                border: 3px solid $grey;
+            }
+        }
+
+        .price {
+            margin-top: 36px;
+            font-family: $font-family-roboto;
+            font-size: $font-size-medium;
+            font-weight: 700;
+            line-height: 18px;
+            color: $black;
+        }
+
+        .currency {
+            font-family: $font-family-raleway;
+            font-weight: 700;
+            font-size: $font-size-large;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+
+        .buttonAdd {
+            font-family: $font-family-raleway;
+            font-weight: 600;
+            line-height: 19px;
+            width: 100%;
+            background-color: $green-1;
+            border: none;
+            color: $white;
+            padding: 15px 32px;
+            font-size: $font-size-small;
+            cursor: pointer;
+
+        }
+
+        .disable {
+            font-family: $font-family-raleway;
+            font-weight: 600;
+            line-height: 19px;
+            width: 100%;
+            background-color: darkgray;
+            border: none;
+            color: $white;
+            padding: 15px 32px;
+            font-size: $font-size-small;
+            cursor: not-allowed;
+
+        }
+
+        .buttonAdd:hover {
+            background: $black;
+        }
+    }
+}
+
+
+
+
