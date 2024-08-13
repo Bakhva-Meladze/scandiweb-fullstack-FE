@@ -87,8 +87,10 @@ class ProductPage extends React.Component {
                                     <div className='currency'>
                                         {`${this.state.currencySymbol[0]?.currency.symbol} ${this.state.currencySymbol[0]?.amount}`}
                                     </div>
-                                    <button className={!this.state.product.inStock || !this.state.permissionToAddDataInCart ? "disable" : "buttonAdd"}
-                                            disabled={!this.state.product.inStock || !this.state.permissionToAddDataInCart}
+                                    <button className={!this.state.product.inStock ||
+                                    (this.state.attributes.length !== 0 && !this.state.permissionToAddDataInCart)? "disable" : "buttonAdd"}
+                                            disabled={!this.state.product.inStock ||
+                                                (this.state.attributes.length !== 0 && !this.state.permissionToAddDataInCart)}
                                             onClick={() =>
                                                 this.state.permissionToAddDataInCart || this.state.product?.attributes?.length === 0 ?
                                                     AddProductInCart(this.state.product, this.state.selectedAttributes)
